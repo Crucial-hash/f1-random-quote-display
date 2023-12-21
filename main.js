@@ -1,4 +1,4 @@
-const API_ENDPOINT = "https://type.fit/api/quotes";
+const API_ENDPOINT = "quotes.json";
 let quotes = [];
 
 const init = async () => {
@@ -12,22 +12,24 @@ const init = async () => {
 };
 
 const randomIndexGenerator = (len) => {
-  return Math.floor(Math.random() * (len + 1));
+  const array = new Uint32Array(1);
+  window.crypto.getRandomValues(array);
+  const randomIndex = array[0] % len;
+  return randomIndex;
 };
 
-init();
-
 const setMarkup = () => {
-  const { text, author } = quotes[randomIndexGenerator(quotes.length)];
+  const quoteData = quotes[randomIndexGenerator(quotes.length)];
+  const quoteText = quoteData.text || quoteData.quote; // Handle both 'text' and 'quote' properties
+
   quotation.innerHTML = `
-        <span class="quote">${text}</span>  
+        <span class="quote">${quoteText}</span>  
         <div class="footer">
             <span id="refresh" title="Refresh | click R">
-                <i class="fas fa-sync"></i>
             </span>
             <div class="author">
                 <span class="line"></span>&nbsp;
-                <span>${author ? author : "Anonymous"}</span>
+                <span>${quoteData.author ? quoteData.author : "Anonymous"}</span>
             </div>
         </div>
     `;
@@ -36,6 +38,13 @@ const setMarkup = () => {
   });
 };
 
-document.onkeypress = (e) => {
-  if (e.key === "r" || e.key === "R") setMarkup();
-};
+var button = document.getElementById("homea");
+
+// Add a click event listener to the button
+button.addEventListener("click", function() {
+  // Redirect to the desired website
+  window.location.href = "https://smartcrucial.duckdns.org/dashboard-ximi/0";
+});
+
+// Initialize the application
+init();

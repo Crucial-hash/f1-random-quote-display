@@ -1,23 +1,19 @@
-:root {
-  --body-bg: #172232;
-  --white: #ffffff;
-  --author: #4ad295;
-}
-
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--body-bg);
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  cursor:none
 }
 
 .quote {
-  font-size: 2rem;
   font-weight: bold;
-  color: var(--white);
+  font-size: 3.15rem;
+  z-index: 1;
+  color: #ffffff;
   animation: animate 0.5s linear;
   -webkit-animation: animate 0.5s linear;
   opacity: 0;
@@ -29,47 +25,50 @@ body {
   justify-content: space-between;
   padding-top: 1rem;
   align-items: center;
+  z-index:1
 }
 
 #quotation {
-  margin-top: -3rem;
-  margin-left: 4rem;
-  color: var(--white);
+  margin-top: -3.6rem;
+  margin-left: 4.3rem;
+  color: #ffffff;
+  z-index: 1
 }
 
 .author {
   display: flex;
   align-items: center;
-  color: var(--author);
+  color: #ffffff;
   justify-content: flex-end;
+  font-size: 1.5rem;
 }
 
 .line {
   width: 20px;
   height: 1px;
-  background: var(--author);
+  background: #ffffff;
+}
+
+button {
+  height: 450px;
+  width: 2000px;
+  background-color: transparent;
+  border: none;
+  transform: translate(-5%, 120%);
+  top: 100px;
+  left: 50px;
+  cursor: none;
+  position:absolute; top:0; right:0;
 }
 
 #main {
-  width: 50%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: -3rem;
-}
-
-img {
-  padding-top: 2rem;
-  transform: scale(0.76);
-  -webkit-transform: scale(0.76);
-  -moz-transform: scale(0.76);
-  -ms-transform: scale(0.76);
-  -o-transform: scale(0.76);
-}
-
-#refresh {
-  color: var(--white);
-  cursor: pointer;
+  transform: translate(0%, 7%);
+  background-color: #000000;
 }
 
 @keyframes animate {
