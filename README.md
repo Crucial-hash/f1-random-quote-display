@@ -1,8 +1,10 @@
-# Random-quote-generator
+# F1 Random Quote Display
 Random Quote Generator with HTML, CSS, and JavaScript.
+
+Localy fetches a quote from various F1 drivers and even eSport drivers
 
 Refresh Quotation using shortcut ``` R ```
 
-![](https://assets.codepen.io/5224857/internal/screenshots/pens/qBNGZEL.default.png?fit=cover&format=auto&ha=true&height=500&quality=100&v=2&version=1605770825&width=900)
+![](https://raw.githubusercontent.com/Crucial-hash/f1-random-quote-display/main/image.png)
 
-## [preview](https://codepen.io/hicoders/pen/qBNGZEL)
+## [Preview](https://crucial-hash.github.io/f1-random-quote-display/)
