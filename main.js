@@ -43,7 +43,7 @@ var button = document.getElementById("homea");
 // Add a click event listener to the button
 button.addEventListener("click", function() {
   // Redirect to the desired website
-  window.location.href = "https://smartcrucial.duckdns.org/dashboard-ximi/0";
+  window.location.href = "http://homeassistant.local:8123/dashboard-ximi/0";
 });
 
 // Initialize the application
