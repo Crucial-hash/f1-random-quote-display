@@ -6,12 +6,13 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  cursor:none
+  cursor: none;
+  touch-action: none;
 }
 
 .quote {
   font-weight: bold;
-  font-size: 3.15rem;
+  font-size: 4.85vmin;
   z-index: 1;
   color: #ffffff;
   animation: animate 0.5s linear;
@@ -23,14 +24,14 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
+  padding-top: 1vw;
   align-items: center;
   z-index:1
 }
 
 #quotation {
-  margin-top: -3.6rem;
-  margin-left: 4.3rem;
+  margin-top: -3vw;
+  margin-left: 4.1vw;
   color: #ffffff;
   z-index: 1
 }
@@ -40,11 +41,11 @@ body {
   align-items: center;
   color: #ffffff;
   justify-content: flex-end;
-  font-size: 1.5rem;
+  font-size: 2vmin;
 }
 
 .line {
-  width: 20px;
+  width: 12px;
   height: 1px;
   background: #ffffff;
 }
@@ -66,7 +67,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: -3rem;
+  margin-left: -3vw;
   transform: translate(0%, 7%);
   background-color: #000000;
 }
