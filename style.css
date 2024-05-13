@@ -12,7 +12,7 @@ body {
 
 .quote {
   font-weight: bold;
-  font-size: 4.85vmin;
+  font-size: 5.2vmin;
   z-index: 1;
   color: #ffffff;
   animation: animate 0.5s linear;
@@ -26,14 +26,15 @@ body {
   justify-content: space-between;
   padding-top: 1vw;
   align-items: center;
-  z-index:1
+  z-index:1;
 }
 
 #quotation {
-  margin-top: -3vw;
+  margin-top: -2.5vw;
   margin-left: 4.1vw;
   color: #ffffff;
-  z-index: 1
+  z-index: 1;
+  line-height: 6.3vh;
 }
 
 .author {
@@ -41,12 +42,12 @@ body {
   align-items: center;
   color: #ffffff;
   justify-content: flex-end;
-  font-size: 2vmin;
+  font-size: 2.5vmin;
 }
 
 .line {
-  width: 12px;
-  height: 1px;
+  width: 0.7vw;
+  height: 0.23vh;
   background: #ffffff;
 }
 
