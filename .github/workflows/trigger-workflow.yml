@@ -16,5 +16,5 @@ jobs:
           curl -X POST \
           -H "Accept: application/vnd.github.v3+json" \
           -H "Authorization: token $GITHUB_TOKEN" \
-          https://api.github.com/repos/Crucial-hash/crucial/actions/workflows/<workflow-file-in-repo-b>.yml/dispatches \
+          https://api.github.com/repos/Crucial-hash/crucial/actions/workflows/update-submodule-push.yml/dispatches \
           -d '{"ref":"main"}'
