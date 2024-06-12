@@ -60,9 +60,10 @@ button {
 }
 
 .line {
-  width: 6.5px;
-  height: 0.5px;
-  background: #ffffff;
+  width: 1vw;
+  height: 0.32vh;
+  background: #6d6d6d;
+  margin-right: 0.16vw;
 }
 
 .footer {
