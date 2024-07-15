@@ -36,8 +36,8 @@ refresh.addEventListener("click", () => {
   setMarkup();
 });};
 
-var button = document.getElementById("homea");
-button.addEventListener("click", function() {
-  window.location.href = "http://homeassistant.local:8123/dashboard-ximi/0";
-});
+document.onkeypress = (e) => {
+  if (e.key === "r" || e.key === "R") setMarkup();
+};
+
 init();

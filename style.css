@@ -24,18 +24,6 @@ body {
   touch-action: none;
 }
 
-button {
-  height: 450px;
-  width: 2000px;
-  background-color: transparent;
-  border: none;
-  transform: translate(-5%, 120%);
-  top: 100px;
-  left: 50px;
-  cursor: none;
-  position:absolute; top:0; right:0;
-}
-
 #main {
   width: 75%;
   display: flex;
